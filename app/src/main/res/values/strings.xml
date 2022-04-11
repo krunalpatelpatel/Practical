@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practical</string>
+    <string name="title_home" >Practical Test</string>
+    <string name="details_of_the_article">Details of The Article</string>
+    <string name="cancel">Cancel</string>
+    <string name="Confirm" >Confirm</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.practicaltest.fragment.MainListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/main_list_fragment">
+
+        <action
+            android:id="@+id/action_navigation_home_to_subListHome"
+            app:destination="@id/subListHome" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/subListHome"
+        android:name="com.example.practicaltest.fragment.SubListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/sub_list_fragment">
+
+        <argument
+            android:name="apikey"
+            app:argType="string"
+            android:defaultValue="null" />
+
+    </fragment>
+
+</navigation>
